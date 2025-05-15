@@ -29,7 +29,7 @@ const TokenInfo = () => {
           <h3 className="text-2xl font-bold text-mom-ai-dark-font mb-4 font-montserrat">$RIKA Tokenomics</h3>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto">
             <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
-              <ResponsiveContainer width={300} height={300}>
+              <ResponsiveContainer width={450} height={450}>
                 <PieChart>
                   <Pie
                     data={tokenomicsData}
@@ -37,8 +37,8 @@ const TokenInfo = () => {
                     nameKey="name"
                     cx="50%"
                     cy="50%"
-                    innerRadius={80}
-                    outerRadius={120}
+                    innerRadius={120}
+                    outerRadius={200}
                     paddingAngle={2}
                   >
                     {tokenomicsData.map((entry, idx) => (
@@ -49,52 +49,52 @@ const TokenInfo = () => {
               </ResponsiveContainer>
             </div>
             <div className="w-full md:w-1/2">
-              <table className="w-full max-w-xl mx-auto text-left">
+              <table className="w-full max-w-xl mx-auto text-left border-separate border-spacing-y-2">
                 <tbody>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#6ed6e9'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#6ed6e9'}}></span></td>
                     <td className="font-bold">Public Sale</td>
                     <td>Fixed Supply</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">37.5%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#ffb347'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#ffb347'}}></span></td>
                     <td className="font-bold">Liquidity Pool</td>
                     <td>Fixed Supply</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">12.5%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#e6e96e'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#e6e96e'}}></span></td>
                     <td className="font-bold">Early Contributors</td>
                     <td>100% 29-day cliff, immediate unlocks</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">5%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#b39ddb'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#b39ddb'}}></span></td>
                     <td className="font-bold">Marketing</td>
                     <td>100% 2-month cliff, 6-month unlocks</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">4%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#6ee9a6'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#6ee9a6'}}></span></td>
                     <td className="font-bold">Developer</td>
                     <td>100% 29-day cliff, 12-month unlocks</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">9.5%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#ffe066'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#ffe066'}}></span></td>
                     <td className="font-bold">Operations</td>
                     <td>100% 1-month cliff, 24-month unlocks</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">4%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#6ec6e9'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#6ec6e9'}}></span></td>
                     <td className="font-bold">Ecosystem & Partnerships</td>
                     <td>100% 7-month cliff, 24-month unlocks</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">5%</td>
                   </tr>
                   <tr>
-                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#ff7675'}}></span></td>
+                    <td><span className="inline-block w-4 h-4 rounded-full" style={{background:'#ff7675'}}></span></td>
                     <td className="font-bold">Community</td>
                     <td>100% 4-month cliff, 100-week unlocks</td>
                     <td className="text-mom-ai-orange-button font-bold text-right">22.5%</td>
