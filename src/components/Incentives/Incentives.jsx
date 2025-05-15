@@ -1,7 +1,7 @@
 import React from 'react';
 
 const incentivesList = [
-  "Be the first to access Mom.AI’s beta and shape its future.",
+  "Be the first to access Mom.AI's beta and shape its future.",
   "Earn exclusive $RIKA tokens upon launch as an early supporter.",
   "Get priority access to premium features and community events.",
   "Join a movement empowering millions of mothers worldwide."
@@ -11,7 +11,8 @@ const Incentives = () => {
   return (
     <section id="incentives" className="bg-mom-ai-beige py-16">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-mom-ai-dark-font mb-10 font-montserrat">Join the Waitlist!</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-mom-ai-dark-font mb-4 font-montserrat">Hold $RIKA for Early Access to Beta App</h2>
+        <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto font-opensans">Beta Users will be incentivised for Early Contributor Programs.</p>
         <ul className="space-y-4 mb-10 max-w-md mx-auto text-left">
           {incentivesList.map((item, index) => (
             <li key={index} className="flex items-start">

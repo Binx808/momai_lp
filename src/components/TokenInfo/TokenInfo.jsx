@@ -21,6 +21,16 @@ const TokenInfo = () => {
         >
           Learn More
         </a>
+        <div className="mt-4">
+          <a 
+            href="https://app.virtuals.io/geneses/1539/tokenomics" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="underline text-mom-ai-blue text-lg font-semibold"
+          >
+            Tokenomics
+          </a>
+        </div>
       </div>
     </section>
   );
