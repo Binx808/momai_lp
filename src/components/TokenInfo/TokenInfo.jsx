@@ -71,7 +71,7 @@ const TokenInfo = () => {
           </div>
           <div className="mt-8 text-center">
             <h4 className="text-lg font-semibold mb-2">Vesting Schedule</h4>
-            <p className="text-gray-700 mb-4">Cliffs and unlocks are designed to ensure long-term alignment and sustainable growth for the Mom.AI ecosystem.</p>
+            <p className="text-gray-700 mb-4">Cliffs and unlocks are designed to ensure long term alignment and sustainable growth for the Mom.AI ecosystem.</p>
           </div>
         </div>
       </div>
