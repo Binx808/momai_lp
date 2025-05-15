@@ -14,7 +14,7 @@ const Header = () => {
           <a href="#" className="text-mom-ai-dark-font hover:text-mom-ai-orange-button">Home</a>
           <a href="#features" className="text-mom-ai-dark-font hover:text-mom-ai-orange-button">Features</a>
           <a href="#token" className="text-mom-ai-dark-font hover:text-mom-ai-orange-button">Token</a>
-          <a href="#waitlist" className="bg-mom-ai-orange-button text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-150">Join Waitlist</a>
+          <a href="https://app.virtuals.io/geneses/1539" className="bg-mom-ai-orange-button text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition duration-150" target="_blank" rel="noopener noreferrer">Join $RIKA Launch</a>
         </nav>
       </div>
     </header>
