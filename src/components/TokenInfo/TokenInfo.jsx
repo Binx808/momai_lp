@@ -25,18 +25,10 @@ const TokenInfo = () => {
         </p>
         <div className="flex justify-center items-center mb-8">
         </div>
-        <a 
-          href="https://app.virtuals.io/geneses/1539/tokenomics" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="bg-mom-ai-orange-button text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition duration-150 text-lg font-semibold"
-        >
-          Learn More
-        </a>
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-mom-ai-dark-font mb-4 font-montserrat">$RIKA Tokenomics</h3>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto">
-            <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
               <ResponsiveContainer width={300} height={300}>
                 <PieChart>
                   <Pie
@@ -57,22 +49,72 @@ const TokenInfo = () => {
               </ResponsiveContainer>
             </div>
             <div className="w-full md:w-1/2">
-              <ul className="space-y-4">
-                {tokenomicsData.map((item, idx) => (
-                  <li key={item.name} className="flex items-center gap-3">
-                    <span className="inline-block w-4 h-4 rounded-full" style={{ backgroundColor: item.color }}></span>
-                    <span className="font-semibold text-mom-ai-dark-font">{item.name}</span>
-                    <span className="text-gray-500 text-sm">{item.desc}</span>
-                    <span className="ml-auto font-bold text-mom-ai-orange-button">{item.value}%</span>
-                  </li>
-                ))}
-              </ul>
+              <table className="w-full max-w-xl mx-auto text-left">
+                <tbody>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#6ed6e9'}}></span></td>
+                    <td className="font-bold">Public Sale</td>
+                    <td>Fixed Supply</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">37.5%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#ffb347'}}></span></td>
+                    <td className="font-bold">Liquidity Pool</td>
+                    <td>Fixed Supply</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">12.5%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#e6e96e'}}></span></td>
+                    <td className="font-bold">Early Contributors</td>
+                    <td>100% 29-day cliff, immediate unlocks</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">5%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#b39ddb'}}></span></td>
+                    <td className="font-bold">Marketing</td>
+                    <td>100% 2-month cliff, 6-month unlocks</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">4%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#6ee9a6'}}></span></td>
+                    <td className="font-bold">Developer</td>
+                    <td>100% 29-day cliff, 12-month unlocks</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">9.5%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#ffe066'}}></span></td>
+                    <td className="font-bold">Operations</td>
+                    <td>100% 1-month cliff, 24-month unlocks</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">4%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#6ec6e9'}}></span></td>
+                    <td className="font-bold">Ecosystem & Partnerships</td>
+                    <td>100% 7-month cliff, 24-month unlocks</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">5%</td>
+                  </tr>
+                  <tr>
+                    <td><span className="inline-block w-3 h-3 rounded-full" style={{background:'#ff7675'}}></span></td>
+                    <td className="font-bold">Community</td>
+                    <td>100% 4-month cliff, 100-week unlocks</td>
+                    <td className="text-mom-ai-orange-button font-bold text-right">22.5%</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div className="mt-8 text-center">
             <h4 className="text-lg font-semibold mb-2">Vesting Schedule</h4>
-            <p className="text-gray-700 mb-4">Cliffs and unlocks are designed to ensure long term alignment and sustainable growth for the Mom.AI ecosystem.</p>
+            <p className="text-gray-700 mb-4">Cliffs and unlocks are designed to ensure long-term alignment and sustainable growth for the Mom.AI ecosystem.</p>
           </div>
+          <a 
+            href="https://app.virtuals.io/geneses/1539/tokenomics" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-mom-ai-orange-button text-white px-8 py-3 rounded-md hover:bg-opacity-90 transition duration-150 text-lg font-semibold mt-8 inline-block"
+          >
+            Learn More
+          </a>
         </div>
       </div>
     </section>
